@@ -1,0 +1,160 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c71d1d;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+nav {
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 0;
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px; 
+    
+}
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 15px;
+}
+.logo h1 {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover {
+    color: red;
+}
+
+
+/* Deals Section */
+.banner {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px; /* Increased margin for better spacing */
+}
+.banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+/* Sections */
+section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 25px 15px;
+}
+
+section h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section p {
+    text-align: center;
+}
+
+/*About Us*/
+#about{
+    background-color: white;
+}
+
+/* Today's Special */
+.special {
+    background: red;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px 15px;
+}
+.special-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* Menu Categories */
+#menu{
+    background-color: red;
+    color: azure;
+    border-radius: 25px 15px;
+}
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.menu-grid p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu-item {
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 5px 10px black;
+    display: flex;
+    border-radius: 10px 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+.menu-item img {
+    width: 100%;
+    height: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
