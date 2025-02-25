@@ -3,11 +3,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: #c71d1d;
     margin: 0;
+    padding: 0;
 }
 
 /* Navigation Bar */
 nav {
-    background: white;
+    background: black;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
@@ -41,22 +42,30 @@ nav {
 
 .logo h1 {
     font-size: 22px;
-    color: black;
+    color: rgb(255, 254, 254);
     font-weight: bold;
     text-decoration: underline;
 }
 
 .nav-links a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: black;
+    display: inline-block;
+    background: red; 
+    color: white;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px; 
+    transition: 0.3s ease-in-out;
+    margin-left: 10px;
+    border: 2px solid red; 
 }
 
 .nav-links a:hover {
-    color: red;
+    background: white; 
+    color: red; 
+    border: 2px solid red;
 }
+
 
 /* Welcome Section */
 .welcome {
@@ -67,6 +76,22 @@ nav {
     margin-top: 60px;
     border-radius: 15px;
 }
+
+.welcome a {
+    display: inline-block;
+    font-size: 20px;
+    background-color: red; 
+    color: white;           
+    text-decoration: none;
+    padding: 12px 20px;     
+    border-radius: 25px;  
+    font-weight: bold;      
+}
+
+.welcome a:hover {
+    color: rgb(0, 0, 0);              
+}
+
 
 /* Hero Section */
 .hero {
@@ -203,7 +228,7 @@ footer {
 }
 
 #locations h2 {
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 24px;
     margin-bottom: 15px;
     text-decoration: underline;
@@ -231,32 +256,30 @@ th {
 }
 
 
-
-/* Table Responsiveness */
-@media (max-width: 768px) {
-    table {
-        font-size: 14px;
-    }
-
-    th, td {
-        padding: 8px;
-    }
-}
-
-
 /* Social Media Links */
 .social-media {
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 20px;
 }
 
+/* Bigger Social Media Icons*/
 .social-icon {
-    display: inline-block;
     margin: 0 10px;
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-size: 24px; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease-in-out, transform 0.5s ease-in-out;
 }
 
+/*Spinning Animation */
 .social-icon:hover {
-    color: red;
+    background: darkred;
+    transform: rotate(360deg);
 }
