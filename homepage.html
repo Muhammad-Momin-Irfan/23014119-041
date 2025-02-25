@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+    <!-- Navigation Bar -->
     <nav>
-        <div class="container">
+        <div class="nav-container">
             <div class="logo">
                 <img src="logo.png" alt="Brand Logo">
                 <h1>Brand Name</h1>
             </div>
-            <div>
+            <div class="nav-links">
                 <a href="#about">About Us</a>
                 <a href="#specials">Today's Special</a>
                 <a href="#menu">Menu</a>
@@ -23,35 +24,117 @@
         </div>
     </nav>
 
-    <section class="banner">
+    <!-- Welcome Section-->
+    <section class="welcome">
+        <h1>Welcome to Our Restaurant!</h1>
+        <p>Experience the best food with fresh ingredients and amazing flavors.</p>
+        <a href="#menu" class="menu-btn">View Menu</a>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="hero">
         <img src="Special.png" alt="Banner Image" class="banner-img">
     </section>
-    
+
+    <!-- About Us Section -->
     <section id="about">
         <h2>About Us</h2>
         <p>Welcome to our restaurant! We serve fresh and delicious meals made with quality ingredients.</p>
+        <a href="about.html" class="read-more-btn">Read More</a>
     </section>
-    
-    <section id="specials" class="special">
+
+    <!-- Today's Special Section -->
+    <section id="specials">
         <h2>Today's Special</h2>
-        <img src="todays-special.png" alt="Today's Special Dish" class="special-img">
+        <img src="todays-special.png" alt="Today's Special Dish">
         <p>Enjoy our special dish of the day at an exclusive discount!</p>
     </section>
-    
+
+    <!-- Menu Categories -->
     <section id="menu">
         <h2>Menu Categories</h2>
         <div class="menu-grid">
-            <div class="menu-item"><img src="BBQ.png" alt="BBQ"><p>BBQ</p></div>
-            <div class="menu-item"><img src="Burger.png" alt="Burgers"><p>Burgers</p></div>
-            <div class="menu-item"><img src="Combos.png" alt="Combos"><p>Combos</p></div>
-            <div class="menu-item"><img src="Drinks.jpg" alt="Drinks"><p>Drinks</p></div>
+            <div class="menu-item">
+                <img src="BBQ.png" alt="BBQ">
+                <p>BBQ</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="Burger.png" alt="Burgers">
+                <p>Burgers</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="Drinks.jpg" alt="Drinks">
+                <p>Drinks</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="Pizza.png" alt="Pizza">
+                <p>Pizza</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="Wraps.jpg" alt="Wraps">
+                <p>Wraps</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="Fries.jpg" alt="Fries">
+                <p>Fries</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="Combos.png" alt="Combos">
+                <p>Combos</p>
+            </div>
         </div>
     </section>
-    
+
+    <!-- Locations and Opening Hours -->
+    <section id="locations">
+        <h2>Our Locations</h2>
+        <table>
+            <tr>
+                <th>Location</th>
+                <th>Address</th>
+                <th>Opening Hours</th>
+            </tr>
+            <tr>
+                <td>Location 1</td>
+                <td>123 Main Street, City A</td>
+                <td>Monday - Sunday: 12 PM - 12 AM</td>
+            </tr>
+            <tr>
+                <td>Location 2</td>
+                <td>456 Elm Street, City B</td>
+                <td>Monday - Sunday: 12 PM - 12 AM</td>
+            </tr>
+            <tr>
+                <td>Location 3</td>
+                <td>789 Oak Avenue, City C</td>
+                <td>Monday - Sunday: 12 PM - 12 AM</td>
+            </tr>
+            <tr>
+                <td>Location 4</td>
+                <td>101 Pine Road, City D</td>
+                <td>Monday - Sunday: 12 PM - 12 AM</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Footer with Social Media -->
     <footer id="contact">
-        <p>Contact Us: 123-456-7890 | Email: restaurant@support.com</p>
-        <p>Locations | Opening Hours</p>
+        <h2>Contact Us</h2>
+        <p>Phone: 123-456-7890 | Email: restaurant@support.com</p>
+        
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Instagram</a>
+            <a href="#" class="social-icon">Twitter</a>
+        </div>
     </footer>
-    
+
 </body>
 </html>

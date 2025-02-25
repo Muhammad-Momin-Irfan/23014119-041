@@ -3,10 +3,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #c71d1d;
     margin: 0;
-    padding: 0;
 }
 
-/* Navigation bar */
+/* Navigation Bar */
 nav {
     background: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -14,8 +13,10 @@ nav {
     width: 100%;
     top: 0;
     padding: 10px 0;
+    z-index: 1000;
 }
-nav .container {
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,19 +24,21 @@ nav .container {
     margin: auto;
     padding: 0 20px;
 }
+
 .logo {
     display: flex;
     align-items: center;
     padding: 5px 15px; 
-    
 }
+
 .logo img {
     width: 50px;
     height: auto;
     margin-right: 10px;
-    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1); 
     border-radius: 15px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1); 
 }
+
 .logo h1 {
     font-size: 22px;
     color: black;
@@ -43,57 +46,73 @@ nav .container {
     text-decoration: underline;
 }
 
-nav a {
+.nav-links a {
     margin-left: 15px;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
-nav a:hover {
+
+.nav-links a:hover {
     color: red;
 }
 
+/* Welcome Section */
+.welcome {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    border-radius: 15px;
+}
 
-/* Deals Section */
-.banner {
+/* Hero Section */
+.hero {
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 100px; /* Increased margin for better spacing */
+    margin-top: 20px;
 }
+
 .banner-img {
     width: 100%;
     height: auto;
     max-height: 400px;
 }
 
-/* Sections */
-section {
+/* About Us */
+#about {
+    background-color: white;
     max-width: 1100px;
     margin: 50px auto;
     padding: 20px;
     border-radius: 25px 15px;
+    text-align: center;
 }
 
-section h2 {
-    text-align: center;
-    text-decoration: underline;
+/* "Read More" Button */
+.read-more-btn {
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
 }
 
-section p {
-    text-align: center;
-}
-
-/*About Us*/
-#about{
-    background-color: white;
+.read-more-btn:hover {
+    background: darkred;
 }
 
 /* Today's Special */
-.special {
+#specials {
     background: red;
     color: white;
     text-align: center;
@@ -102,6 +121,7 @@ section p {
     font-weight: bold;
     border-radius: 25px 15px;
 }
+
 .special-img {
     width: 100%;
     max-width: 300px;
@@ -110,45 +130,58 @@ section p {
     margin: 15px 0;
 }
 
-/* Menu Categories */
-#menu{
+/* Menu Section */
+#menu {
     background-color: red;
-    color: azure;
+    color: white;
+    padding: 20px;
+    text-align: center;
     border-radius: 25px 15px;
 }
+
 .menu-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    
+    margin-top: 20px;
 }
 
-.menu-grid p{
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 16px;
-}
-
+/* Menu Item */
 .menu-item {
     background: white;
     padding: 15px;
     box-shadow: 0px 5px 10px black;
     display: flex;
-    border-radius: 10px 10px;
     flex-direction: column;
     align-items: center;
     width: 200px;
+    height: 220px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
+
+/* Fixed Image Size with Cover */
 .menu-item img {
     width: 100%;
-    height: 100%;
-    max-height: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 8px;
 }
 
+/* Add spacing between image and text */
+.menu-item p {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Zoom-In Animation */
+.menu-item:hover {
+    transform: scale(1.1);
+}
 
 /* Footer */
 footer {
@@ -157,4 +190,73 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
+}
+
+/* Locations and Opening Hours Section */
+#locations {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#locations h2 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+/* Header Row */
+th {
+    background-color: red;
+    font-weight: bold;
+}
+
+
+
+/* Table Responsiveness */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+
+/* Social Media Links */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.social-icon:hover {
+    color: red;
 }
