@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Menu</title>
+    <link rel="stylesheet" href="./CSS Files/BBQstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./Resources/Homepage/logo.png" alt="Brand Logo">
+                <h1>Brand Name</h1>
+            </div>
+            <div class="nav-links">
+                <a href="homepage.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="homepage.html#specials">Today's Special</a>
+                <a href="homepage.html#menu">Menu</a>
+                <a href="homepage.html#contact">Contact</a>
+                <a href="login.html"><i class="fas fa-user"></i> Login/Register</a>
+                <a href="Cart.html"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <header class="menu-header">
+        <h1>Our Burger Selection</h1>
+        <p>Savor our range of juicy and flavorful burgers, crafted with the finest ingredients and served with fresh toppings.</p>
+    </header>
+
+    <!-- Regular Burgers -->
+<section class="menu-category">
+    <h2>Regular Burgers</h2>
+    <div class="menu-items">
+        <div class="menu-item">
+            <img src="./Resources/Burger Pics/Regular.png" alt="Regular Burger">
+            <h3>Regular Burger</h3>
+            <p>A classic burger with fresh lettuce, tomato, and our special sauce.</p>
+            <p class="price">399 RS</p>
+            <button class="add-to-cart" data-name="Regular Burger" data-price="399" data-image="./Burger Pics/Regular.png">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="./Resources/Burger Pics/Regular C.png" alt="Regular Burger with Cheese">
+            <h3>Regular Burger with Cheese</h3>
+            <p>A classic burger with melted cheese, lettuce, tomato, and special sauce.</p>
+            <p class="price">449 RS</p>
+            <button class="add-to-cart" data-name="Regular Burger with Cheese" data-price="449" data-image="./Burger Pics/Regular C.png">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="./Resources/Burger Pics/Regular.png" alt="Double Egg Regular Burger">
+            <h3>Double Egg Regular Burger</h3>
+            <p>A delicious regular burger topped with two eggs for extra flavor.</p>
+            <p class="price">499 RS</p>
+            <button class="add-to-cart" data-name="Double Egg Regular Burger" data-price="499" data-image="./Burger Pics/Regular.png">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="./Resources/Burger Pics/Regular M.jpg" alt="Mighty Regular">
+            <h3>Mighty Regular</h3>
+            <p>A jumbo-sized regular burger packed with extra meat and flavor.</p>
+            <p class="price">599 RS</p>
+            <button class="add-to-cart" data-name="Mighty Regular" data-price="599" data-image="./Burger Pics/Regular M.jpg">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- Chicken Burgers -->
+<section class="menu-category">
+    <h2>Chicken Burgers</h2>
+    <div class="menu-items">
+        <div class="menu-item">
+            <img src="./Resources/Burger Pics/Patty.png" alt="Chicken Patty Burger">
+            <h3>Chicken Patty Burger</h3>
+            <p>Crispy chicken patty with fresh lettuce, tomato, and mayo.</p>
+            <p class="price">399 RS</p>
+            <button class="add-to-cart" data-name="Chicken Patty Burger" data-price="399" data-image="./Burger Pics/Patty.png">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="./Resources/Burger Pics/Double P.png" alt="Double Patty">
+            <h3>Double Patty</h3>
+            <p>Two crispy chicken patties stacked with lettuce, tomato, and mayo.</p>
+            <p class="price">549 RS</p>
+            <button class="add-to-cart" data-name="Double Patty" data-price="549" data-image="./Burger Pics/Double P.png">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="./Resources/Burger Pics/Pattywith Cheese.png" alt="Patty with Cheese">
+            <h3>Patty with Cheese</h3>
+            <p>Crispy chicken patty with melted cheese, lettuce, and mayo.</p>
+            <p class="price">449 RS</p>
+            <button class="add-to-cart" data-name="Patty with Cheese" data-price="449" data-image="./Burger Pics/Pattywith Cheese.png">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- Beef Burgers -->
+<section class="menu-category">
+    <h2>Beef Burgers</h2>
+    <div class="menu-items">
+        <div class="menu-item">
+            <img src="./Resources/Burger Pics/Hamburger.png" alt="Hamburger">
+            <h3>Hamburger</h3>
+            <p>Classic beef patty with fresh lettuce, tomato, and mustard.</p>
+            <p class="price">499 RS</p>
+            <button class="add-to-cart" data-name="Hamburger" data-price="499" data-image="./Burger Pics/Hamburger.png">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="./Resources/Burger Pics/Smash.png" alt="Smash Burger">
+            <h3>Smash Burger</h3>
+            <p>Smoked beef patty smashed with caramelized onions and cheese.</p>
+            <p class="price">549 RS</p>
+            <button class="add-to-cart" data-name="Smash Burger" data-price="549" data-image="./Burger Pics/Smash.png">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Phone: 123-456-7890 | Email: restaurant@support.com</p>
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

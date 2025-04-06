@@ -1,0 +1,336 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c71d1d;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px; 
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.logo h1 {
+    font-size: 22px;
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav-links a {
+    display: inline-block;
+    background: red; 
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px; 
+    transition: 0.3s ease-in-out;
+    margin-left: 10px;
+    border: 2px solid red; 
+}
+
+.nav-links a:hover {
+    background: black; 
+    color: red; 
+    border: 2px solid red;
+}
+
+/* Welcome Section */
+.welcome {
+    background: black;
+    color: red;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+
+.welcome a {
+    display: inline-block;
+    font-size: 20px;
+    background-color: red; 
+    color: black;           
+    text-decoration: none;
+    padding: 12px 20px;     
+    border-radius: 25px;  
+    font-weight: bold;      
+}
+
+.welcome a:hover {
+    background: black;
+    color: red;
+    border: 2px solid red;   
+}
+
+/* Hero Section */
+.hero {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.banner-img {
+    width: 95%;
+    height: auto;
+    max-height: 400px;
+}
+
+/* About Us */
+#about {
+    background-color: black;
+    color: red;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 25px 15px;
+    text-align: center;
+}
+
+/* "Read More" Button */
+.read-more-btn {
+    display: inline-block;
+    background: red;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.read-more-btn:hover {
+    background: black;
+    color: red;
+    border: 2px solid red;
+}
+
+
+/* Today's Special */
+#specials {
+    background: black;
+    color: red;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px 15px;
+    max-width: 1100px;
+    text-align: center;
+
+    margin: 50px auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.special-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* Menu Section */
+#menu {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px 15px;
+}
+
+/* Menu Section a tags */
+#menu a{
+    text-decoration: none;
+}
+
+#menu h2{
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    font-size: 36px;
+    border-radius: 20px;
+    text-decoration: underline;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Menu Item */
+.menu-item {
+    background: rgb(0, 0, 0);
+    padding: 15px;
+    box-shadow: 0px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px; 
+    height: 250px; 
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center; 
+}
+
+
+/* Fixed Image Size */
+.menu-item img {
+    width: 180px; 
+    height: 140px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Menu Title */
+.menu-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: red;
+    width: 100%; 
+}
+
+/* Menu Description */
+.menu-item p {
+    color: red;
+    font-family: 'Arial', Times, serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+    width: 100%;
+    max-height: 40px;
+}
+
+/* Zoom-In Animation */
+.menu-item:hover {
+    transform: scale(1.1);
+}
+
+
+/* Locations and Opening Hours Section */
+#locations {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#locations h2 {
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    font-size: 36px;
+    border-radius: 20px;
+    text-decoration: underline;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: black;
+}
+
+th, td {
+    border: 1px solid azure;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+
+/* Header Row */
+th {
+    font-weight: bold;
+}
+
+/* Table Responsiveness */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: red;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Social Media Links */
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Bigger Social Media Icons with Font Awesome */
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Hover Effect with Spinning Animation */
+.social-icon:hover {
+    background: darkred;
+    transform: rotate(360deg);
+}
