@@ -22,32 +22,64 @@
 
 <body class="bg-[#c71d1d] font-sans m-0 p-0">
 
-  <!-- Navigation Bar -->
-  <nav class="bg-black fixed w-full top-0 shadow-md py-3 z-50">
-    <div class="max-w-[1100px] mx-auto flex justify-between items-center px-5">
+<!-- Navigation Bar -->
+<nav id="navbar" class="bg-black sticky top-0 w-full shadow-lg py-3 transition-transform duration-300 z-50">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="flex justify-between items-center">
       <!-- Logo -->
-      <div class="flex items-center p-[5px_15px]">
-        <img src="./Resources/Combos/Resources/Homepage/logo.png" alt="Brand Logo" class="w-[50px] h-auto rounded-[15px] shadow-md mr-3" />
-        <h1 class="text-red-600 text-[22px] font-bold underline">Brand Name</h1>
+      <div class="flex items-center space-x-3">
+        <img src="./Resources/Homepage/logo.png" alt="Brand Logo" class="w-12 h-auto rounded-xl shadow-md">
+        <h1 class="text-red-500 text-lg font-bold underline">Brand Name</h1>
       </div>
-      <!-- Navigation Links -->
-      <div class="flex flex-wrap gap-2 items-center">
-        <a href="homepage.html" class="bg-red-600 text-black font-bold px-4 py-2 rounded-lg border-2 border-red-600 hover:bg-black hover:text-red-600 transition">Home</a>
-        <a href="about.html" class="bg-red-600 text-black font-bold px-4 py-2 rounded-lg border-2 border-red-600 hover:bg-black hover:text-red-600 transition">About Us</a>
-        <a href="homepage.html#specials" class="bg-red-600 text-black font-bold px-4 py-2 rounded-lg border-2 border-red-600 hover:bg-black hover:text-red-600 transition">Today's Special</a>
-        <a href="homepage.html#menu" class="bg-red-600 text-black font-bold px-4 py-2 rounded-lg border-2 border-red-600 hover:bg-black hover:text-red-600 transition">Menu</a>
-        <a href="homepage.html#contact" class="bg-red-600 text-black font-bold px-4 py-2 rounded-lg border-2 border-red-600 hover:bg-black hover:text-red-600 transition">Contact</a>
-        <a href="Login/login.html" class="bg-red-600 text-black font-bold px-4 py-2 rounded-lg border-2 border-red-600 hover:bg-black hover:text-red-600 transition flex items-center space-x-2">
-          <i class="fas fa-user"></i>
-          <span>Login/Register</span>
-        </a>
-        <a href="Cart.html" class="bg-red-600 text-black font-bold px-4 py-2 rounded-lg border-2 border-red-600 hover:bg-black hover:text-red-600 transition flex items-center space-x-2">
-          <i class="fas fa-shopping-cart"></i>
-          <span>Cart</span>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button id="nav-toggle" class="lg:hidden text-red-500 text-2xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navigation Links (Desktop) -->
+      <div id="nav-menu" class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:space-x-4 text-center">
+       
+          <a href="homepage.html" class="bg-red-500 text-black font-bold px-4 py-2 rounded-md border-2 border-red-500 hover:bg-black hover:text-red-500 transition">Home</a>
+
+          <a href="about.html" class="bg-red-500 text-black font-bold px-4 py-2 rounded-md border-2 border-red-500 hover:bg-black hover:text-red-500 transition">About Us</a>
+       
+          <a href="homepage.html#specials" class="bg-red-500 text-black font-bold px-4 py-2 rounded-md border-2 border-red-500 hover:bg-black hover:text-red-500 transition">Today's Special</a>
+        
+        
+          <a href="homepage.html#menu" class="bg-red-500 text-black font-bold px-4 py-2 rounded-md border-2 border-red-500 hover:bg-black hover:text-red-500 transition">Menu</a>
+        <a href="homepage.html#contact" class="bg-red-500 text-black font-bold px-4 py-2 rounded-md border-2 border-red-500 hover:bg-black hover:text-red-500 transition">Contact</a>
+        
+        <a href="Cart.html" class="bg-red-500 text-black font-bold px-4 py-2 rounded-md border-2 border-red-500 hover:bg-black hover:text-red-500 transition flex items-center justify-center space-x-2">
+          <i class="fas fa-shopping-cart"></i><span>Cart</span>
         </a>
       </div>
     </div>
-  </nav>
+
+    <!-- Navigation Links (Mobile Dropdown) -->
+    <div id="nav-menu-mobile" class="lg:hidden hidden flex-col items-center mt-4 space-y-3 text-center">
+      <a href="homepage.html" class="bg-red-500 text-black font-bold px-4 py-2 w-full rounded-md border-2 border-red-500 hover:bg-black hover:text-red-500 transition">Home</a>
+      <a href="about.html" class="bg-red-500 text-black font-bold px-4 py-2 w-full rounded-md border-2 border-red-500 hover:bg-black hover:text-red-500 transition">About Us</a>
+      <a href="homepage.html#specials" class="bg-red-500 text-black font-bold px-4 py-2 w-full rounded-md border-2 border-red-500 hover:bg-black hover:text-red-500 transition">Today's Special</a>
+      <a href="homepage.html#menu" class="bg-red-500 text-black font-bold px-4 py-2 w-full rounded-md border-2 border-red-500 hover:bg-black hover:text-red-500 transition">Menu</a>
+      <a href="homepage.html#contact" class="bg-red-500 text-black font-bold px-4 py-2 w-full rounded-md border-2 border-red-500 hover:bg-black hover:text-red-500 transition">Contact</a>
+
+      <a href="Cart.html" class="bg-red-500 text-black font-bold px-4 py-2 w-full rounded-md border-2 border-red-500 hover:bg-black hover:text-red-500 transition flex items-center justify-center space-x-2">
+        <i class="fas fa-shopping-cart"></i><span>Cart</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+    <!-- JS -->
+    <script>
+      const toggle = document.getElementById('nav-toggle');
+      const mobileMenu = document.getElementById('nav-menu-mobile');
+    
+      toggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
 
 
   <!-- Register Section -->
