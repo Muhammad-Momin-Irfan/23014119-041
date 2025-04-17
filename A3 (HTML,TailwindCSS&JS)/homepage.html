@@ -10,7 +10,6 @@
 
 </head>
 
-
 <body class="bg-red-700 font-sans m-0 p-0">
 
     <!-- Navigation Bar -->
@@ -46,7 +45,11 @@
     <a href="#menu" class="inline-block mt-4 text-xl font-bold bg-red-500 text-black px-6 py-3 rounded-full hover:bg-black hover:text-red-500 border-2 border-red-500 transition">
         View Menu
     </a>
+    <br>
+    <p id="openingStatus" class="text-[24px] font-bold text-green-600 mt-4"></p>
 </section>
+
+
 
 <!-- Hero Section -->
 <section class="flex items-center justify-center text-center mt-5">
@@ -69,70 +72,110 @@
     <img class="special-img w-full max-w-xs h-auto rounded-lg mt-4" src="./Resources/Homepage/MondayS.jpg" alt="Today's Special">
     <p class="special-text text-lg font-bold mt-4">Loading special...</p>
     <p class="mt-2 text-lg">Enjoy our special dish of the day at an exclusive discount!</p>
+    <br>
+    <p class="text-center font-bold text-lg mb-4">⏰ Special Offer Ends In: <span id="specialTimer" class="text-red-600"></span></p>
+
 </section>
 
 
  <!-- Menu Categories -->
 <section id="menu" class="text-black p-6 text-center rounded-2xl">
     <h2 class="bg-black text-red-500 font-bold text-3xl underline rounded-xl py-2">Menu Categories</h2>
-
-    <div class="flex flex-wrap gap-5 justify-center mt-6">
-        <!-- Menu Items -->
-        <a href="BBQ.html" class="bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110">
-            <img src="./Resources/Homepage/BBQ.png" alt="BBQ" class="w-[180px] h-[140px] object-cover rounded-md">
-            <h3 class="text-red-500 text-lg font-bold mt-2 w-full">BBQ</h3>
-            <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Enjoy the rich, smoky flavors of our perfectly grilled meats.</p>
-        </a>
-
-        <a href="Burgers.html" class="bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110">
-            <img src="./Resources/Homepage/Burger.png" alt="Burgers" class="w-[180px] h-[140px] object-cover rounded-md">
-            <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Burgers</h3>
-            <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Juicy, flavorful burgers made with the freshest ingredients.</p>
-        </a>
-
-        <a href="Drinks.html" class="bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110">
-            <img src="./Resources/Homepage/Drinks.png" alt="Drinks" class="w-[180px] h-[140px] object-cover rounded-md">
-            <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Drinks</h3>
-            <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Quench your thirst with our wide selection of beverages.</p>
-        </a>
-
-        <a href="Pizza.html" class="bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110">
-            <img src="./Resources/Homepage/Pizza.png" alt="Pizza" class="w-[180px] h-[140px] object-cover rounded-md">
-            <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Pizza</h3>
-            <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Hot and cheesy pizzas with a variety of mouthwatering toppings.</p>
-        </a>
-
-        <a href="Wraps.html" class="bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110">
-            <img src="./Resources/Homepage/Wrap.png" alt="Wraps" class="w-[180px] h-[140px] object-cover rounded-md">
-            <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Wraps</h3>
-            <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Freshly made wraps filled with delicious ingredients.</p>
-        </a>
-
-        <a href="Fries.html" class="bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110">
-            <img src="./Resources/Homepage/Fries.jpg" alt="Fries" class="w-[180px] h-[140px] object-cover rounded-md">
-            <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Fries</h3>
-            <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Crispy, golden fries that are the perfect side to any meal.</p>
-        </a>
-
-        <a href="Combos.html" class="bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110">
-            <img src="./Resources/Homepage/Combos.png" alt="Combos" class="w-[180px] h-[140px] object-cover rounded-md">
-            <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Combos</h3>
-            <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Get the best of everything with our perfectly curated meal combos.</p>
-        </a>
-
-        <a href="Appitizers.html" class="bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110">
-            <img src="./Resources/Homepage/Appitizers.png" alt="Appetizers" class="w-[180px] h-[140px] object-cover rounded-md">
-            <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Appetizers</h3>
-            <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Start your meal right with our tasty selection of starters.</p>
-        </a>
-
-        <a href="Dips.html" class="bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110">
-            <img src="./Resources/Homepage/Dips.png" alt="Dips" class="w-[180px] h-[140px] object-cover rounded-md">
-            <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Dips</h3>
-            <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Enhance your meal with our rich and flavorful dips.</p>
-        </a>
-    </div>
-</section>
+    
+        <div class="flex flex-wrap gap-5 justify-center mt-6">
+            <!-- Menu Item - BBQ -->
+            <a href="BBQ.html" class="menu-item bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110" data-category="BBQ">
+                <div class="menu-img-wrapper relative w-[180px] h-[140px]">
+                    <img src="./Resources/Homepage/BBQ.png" class="menu-img absolute top-0 left-0 w-full h-full object-cover rounded-md" alt="BBQ">
+                </div>
+                <h3 class="text-red-500 text-lg font-bold mt-2 w-full">BBQ</h3>
+                <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Enjoy the rich, smoky flavors of our perfectly grilled meats.</p>
+            </a>
+    
+            <!-- Menu Item - Burgers -->
+            <a href="Burgers.html" class="menu-item bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110" data-category="Burgers">
+                <div class="menu-img-wrapper relative w-[180px] h-[140px]">
+                    <img src="./Resources/Homepage/Burger.png" class="menu-img absolute top-0 left-0 w-full h-full object-cover rounded-md" alt="Burgers">
+                </div>
+                <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Burgers</h3>
+                <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Juicy, flavorful burgers made with the freshest ingredients.</p>
+            </a>
+    
+            <!-- Menu Item - Drinks -->
+            <a href="Drinks.html" class="menu-item bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110" data-category="Drinks">
+                <div class="menu-img-wrapper relative w-[180px] h-[140px]">
+                    <img src="./Resources/Homepage/Drinks.png" class="menu-img absolute top-0 left-0 w-full h-full object-cover rounded-md" alt="Drinks">
+                </div>
+                <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Drinks</h3>
+                <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Quench your thirst with our wide selection of beverages.</p>
+            </a>
+    
+            <!-- Menu Item - Pizza -->
+            <a href="Pizza.html" class="menu-item bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110" data-category="Pizza">
+                <div class="menu-img-wrapper relative w-[180px] h-[140px]">
+                    <img src="./Resources/Homepage/Pizza.png" class="menu-img absolute top-0 left-0 w-full h-full object-cover rounded-md" alt="Pizza">
+                </div>
+                <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Pizza</h3>
+                <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Hot and cheesy pizzas with a variety of mouthwatering toppings.</p>
+            </a>
+    
+            <!-- Menu Item - Wraps -->
+            <a href="Wraps.html" class="menu-item bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110" data-category="Wraps">
+                <div class="menu-img-wrapper relative w-[180px] h-[140px]">
+                    <img src="./Resources/Homepage/Wrap.png" class="menu-img absolute top-0 left-0 w-full h-full object-cover rounded-md" alt="Wraps">
+                </div>
+                <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Wraps</h3>
+                <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Freshly made wraps filled with delicious ingredients.</p>
+            </a>
+    
+            <!-- Menu Item - Fries -->
+            <a href="Fries.html" class="menu-item bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110" data-category="Fries">
+                <div class="menu-img-wrapper relative w-[180px] h-[140px]">
+                    <img src="./Resources/Homepage/Fries.jpg" class="menu-img absolute top-0 left-0 w-full h-full object-cover rounded-md" alt="Fries">
+                </div>
+                <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Fries</h3>
+                <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Crispy, golden fries that are the perfect side to any meal.</p>
+            </a>
+    
+            <!-- Menu Item - Combos -->
+            <a href="Combos.html" class="menu-item bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110" data-category="Combos">
+                <div class="menu-img-wrapper relative w-[180px] h-[140px]">
+                    <img src="./Resources/Homepage/Combos.png" class="menu-img absolute top-0 left-0 w-full h-full object-cover rounded-md" alt="Combos">
+                </div>
+                <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Combos</h3>
+                <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Get the best of everything with our perfectly curated meal combos.</p>
+            </a>
+    
+            <div class="menu-item bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300"
+            data-category="Appetizers">
+       
+           <!-- Swipeable image area -->
+           <div class="menu-img-wrapper relative w-[180px] h-[140px] overflow-hidden bg-gray-200 rounded-md cursor-pointer">
+               <!-- JS adds images here -->
+           </div>
+       
+           <!-- Clickable text area -->
+           <a href="Appetizers.html" class="hover:scale-110 transition-transform duration-300 w-full flex flex-col items-center mt-2">
+               <h3 class="text-red-500 text-lg font-bold w-full">Appetizers</h3>
+               <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">
+                   Start your meal right with our tasty selection of starters.
+               </p>
+           </a>
+       </div>
+       
+         
+    
+            <!-- Menu Item - Dips -->
+            <a href="Dips.html" class="menu-item bg-black p-4 shadow-lg flex flex-col items-center w-[220px] h-[275px] rounded-lg text-center transition-transform duration-300 hover:scale-110" data-category="Dips">
+                <div class="menu-img-wrapper relative w-[180px] h-[140px]">
+                    <img src="./Resources/Homepage/Dips.png" class="menu-img absolute top-0 left-0 w-full h-full object-cover rounded-md" alt="Dips">
+                </div>
+                <h3 class="text-red-500 text-lg font-bold mt-2 w-full">Dips</h3>
+                <p class="text-red-500 font-bold text-sm mt-1 w-full max-h-[40px]">Enhance your meal with our rich and flavorful dips.</p>
+            </a>
+        </div>
+    </section>
+    
 
     <!-- Locations and Opening Hours -->
 <section id="locations" class="max-w-[1100px] mx-auto my-12 p-6 rounded-lg text-center shadow-lg">
@@ -194,6 +237,8 @@
         </a>
     </div>
 </footer>
+
+<button id="backToTop" onclick="scrollToTop()" class="fixed bottom-5 right-5 hidden bg-red-500 text-white px-4 py-2 rounded-full shadow-lg z-50 transition-opacity duration-300">↑</button>
 
 
 <style>
