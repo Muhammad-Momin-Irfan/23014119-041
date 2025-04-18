@@ -28,6 +28,16 @@
         </div>
     </nav>
 
+    <script>
+        const toggleBtn = document.getElementById('nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+    
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+
     <!-- Page Heading -->
     <header class="menu-header">
         <h1>Our BBQ Selection</h1>

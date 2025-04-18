@@ -237,20 +237,8 @@ document.addEventListener("DOMContentLoaded", function () {
             "./Resources/Apppitizers Pics/Wings.png",
             "./Resources/Apppitizers Pics/MSticks.png",
             "./Resources/Apppitizers Pics/Fingers.png"
-        ],
-        BBQ: [
-            "./Resources/Menu/BBQ1.jpg",
-            "./Resources/Menu/BBQ2.jpg",
-            "./Resources/Menu/BBQ3.jpg",
-            "./Resources/Menu/BBQ4.jpg"
-        ],
-        Burgers: [
-            "./Resources/Menu/Burger1.jpg",
-            "./Resources/Menu/Burger2.jpg",
-            "./Resources/Menu/Burger3.jpg",
-            "./Resources/Menu/Burger4.jpg"
-        ],
-        // Add more categories here...
+        ]
+        
     };
 
     const swipeCategories = ['Appetizers']; // Add other swipe-enabled categories here

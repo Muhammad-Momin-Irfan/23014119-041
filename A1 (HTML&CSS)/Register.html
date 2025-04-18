@@ -27,6 +27,16 @@
         </div>
     </nav>
 
+    <script>
+        const toggleBtn = document.getElementById('nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+    
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+
     <!-- Register Section -->
     <section class="login-container">
         <div class="login-box">
@@ -55,7 +65,7 @@
 
                 <button type="submit" class="btn login-btn">Register</button>
 
-                <p class="register-link">Already have an account? <a href="../Login/login.html">Login Here</a></p>
+                <p class="register-link">Already have an account? <a href="login.html">Login Here</a></p>
             </form>
         </div>
     </section>

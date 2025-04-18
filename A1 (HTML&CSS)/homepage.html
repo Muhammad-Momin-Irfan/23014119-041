@@ -11,23 +11,42 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <img src="./Resources/Homepage/logo.png" alt="Brand Logo">
-                <h1>Brand Name</h1>
-            </div>
-            <div class="nav-links">
-                <a href="#about">About Us</a>
-                <a href="#specials">Today's Special</a>
-                <a href="#menu">Menu</a>
-                <a href="#contact">Contact</a>
-                <a href="login.html"><i class="fas fa-user"></i> Login/Register</a>
-                <a href="Cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
-            </div>
-
+    <!-- Navigation Bar -->
+<nav>
+    <div class="nav-container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./Resources/Homepage/logo.png" alt="Brand Logo">
+            <h1>Brand Name</h1>
         </div>
-    </nav>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button id="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="nav-links" id="nav-menu">
+            <a href="#about">About Us</a>
+            <a href="#specials">Today's Special</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+            <a href="login.html"><i class="fas fa-user"></i> Login/Register</a>
+            <a href="Cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const toggleBtn = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+    
 
     <!-- Welcome Section -->
     <section class="welcome">
